@@ -1,13 +1,55 @@
+// Name: Eren;
+// Date: 1/22/25
+// Description: This defines the class of every country which is used to create instances of the Country class in the Main.java file
+
 public class Country
 {
-  // add private instance variables for the name, capital, language, and image file.
+  private String language="";
+  private String imageFile="";
+  private String name="";
+  private String capital="";
 
-  // add constructors
+  public Country() {
+    name = "United States";
+    capital = "Washington, D.C";
+    language = "English";
+    imageFile = "US.jpg";
+  }
 
-  // Write accessor/get methods for each instance variable that returns it.
+  public Country(String name, String capital, String language, String imageFile) 
+  {
+    this.name = name;
+    this.capital = capital;
+    this.language = language;
+    this.imageFile = imageFile;
+  }
 
-  // Write a toString() method that returns a concatenated String of 3 of the instance variables in a sentence like "..'s capital is .. and its primary language is ..."
- System.out.println('sdfsdf');
+  public String toString() {
+
+    return name+"'s capital is " + capital + " and its primary language is " + language;
+  }
+
+  public String getCapital() {
+    return capital;
+  }
+
+  
+
+
+
+   public String getLanguage() {
+    return language;
+  }
+  public String getName() {
+    return name;
+  }
+
+  public String getImageFile() {
+    return imageFile;
+  }
+ 
+
+ 
 
 
   
